@@ -1,0 +1,29 @@
+<h2>Alunos</h2>
+<div class="alunos-container">
+  <div *ngFor="let item of alunos;">
+    <div [ngClass]="
+    {
+    bg_blue: item.index%2 !== 0,
+    bg_red: item.index %2 ===0
+  }
+      ">
+      <h3>Aluno {{item.index}}</h3>
+      <div class="content-container">
+        <h3>Nome:</h3>
+        <p>{{ item.nome }}</p>
+      </div>
+      <div class="content-container">
+        <h3>Idade:</h3>
+        <p>{{ item.idade }}</p>
+      </div>
+      <div class="content-container">
+        <h3>Genero:</h3>
+        <p>{{ item.sexo }}</p>
+      </div>
+      <div class="content-container">
+        <h3>CEP:</h3>
+        <p>{{ item.cep }}</p>
+      </div>
+    </div>
+  </div>
+</div>

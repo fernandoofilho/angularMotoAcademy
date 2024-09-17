@@ -1,0 +1,21 @@
+.item-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item{
+  margin-right: auto;
+}
+
+.name{
+  color: brown;
+  margin-right: auto;
+}
+
+.highlight{
+  background-color: blue;
+  color: white;
+}
+.hightlight_title{
+  color: white;
+}
